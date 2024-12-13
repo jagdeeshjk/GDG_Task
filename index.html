@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Countdown</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Jagdeesh Meena</h1>
+        </header>
+        <main>
+            <div class="countdown-section">
+                <h2>New Year Countdown</h2>
+                <div id="countdown">DD:HH:MM:SS</div>
+                <button id="preview">Preview</button>
+            </div>
+            <div class="creative-section">
+                <h2>Be Creative Here</h2>
+                <p>Click the button below to change the background color!</p>
+                <button id="colorChange">Change Background Color</button>
+            </div>
+            
+            <div class="about-section">
+                <h2>Tell About Yourself</h2>
+                <div class="image-container">
+                    
+                    <img src="your-picture.jpg" alt="Your Picture">
+                </div>
+                <div class="details">
+                   
+                    <p>
+                        Name: Jagdeesh Meena<br>
+                        About Me: A 3rd-year undergraduate student at IIT Kanpur pursuing Mechanical Engineering. Passionate about robotics, software development, and design.<br>
+                        Skills: HTML, CSS, JavaScript, Python, MATLAB, Fusion 360, and more.
+                    </p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Popup Window -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="closePopup" class="close">&times;</span>
+            <h2>!!! Happy New Year 2025 !!!</h2>
+            <img src="your-picture.jpg" alt="Your Picture" style="width: 100px; height: auto; border-radius: 50%; margin: 10px 0;">
+            <p>Wishing you a year filled with joy, success, and creativity. May 2025 bring new opportunities and memorable moments. 
+            <br><br>
+            <strong>About Me:</strong> Jagdeesh Meena, a passionate 3rd-year undergraduate at IIT Kanpur with interests in robotics, software development, and design.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // JavaScript to handle the popup changes
+        document.getElementById('preview').addEventListener('click', () => {
+            const popup = document.getElementById('popup');
+            popup.style.display = 'block';
+        });
+
+        document.getElementById('closePopup').addEventListener('click', () => {
+            const popup = document.getElementById('popup');
+            popup.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
