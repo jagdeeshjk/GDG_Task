@@ -56,7 +56,7 @@ This webpage showcases a creative countdown to the New Year along with interacti
 ### Author:
 
 - **Name**: Jagdeesh Meena  
-- **Email**: your_email@example.com  
+- **Email**: jagdeeshm22@iitk.ac.in 
 
 ---
 
